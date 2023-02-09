@@ -1,0 +1,15 @@
+{
+    "hosting": {
+        "public": "public",
+        "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+        "rewrites": [
+            {
+                "source": "**",
+                "destination": "/index.html"
+            }
+        ]
+    },
+    "extensions": {
+        "send-message": "twilio/send-message@0.2.1"
+    }
+}
