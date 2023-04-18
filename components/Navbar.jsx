@@ -28,9 +28,9 @@ export const Navbar = () => {
                     <div>
                         <Link href={`/${role}`}>
                             <img
-                                src="/images/Renosis_Logo.png"
+                                src="/images/logomed.png"
                                 alt=""
-                                height="50"
+                                height="42"
                                 align="center"
                             />
                         </Link>
@@ -39,7 +39,7 @@ export const Navbar = () => {
                     {user !== null ? (
                         <div className="hidden sm:flex sm:items-center">
                             <a className="text-gray-800 text-lg font-semibold border px-4 py-2">
-                                <Button
+                                <Button variant = "contained"
                                     onClick={() => {
                                         auth.signOut()
                                             .then(function() {
